@@ -1,0 +1,26 @@
+2026-10-22 parent coordination replay
+Repository: drakestapleton/drakestapleton.com
+Exact executable source: 450196e1f2f2335b24a8ef509f2a652a539b920b
+Observed exit: 1; expected by the documented bounded recipe: 1
+Scope: syntax checks pass; existing copy guard fails at nine lines; full build pending iMac runner
+
+This is a separate fresh temporary checkout, not reuse of the author build directory. Git objects may be shared as immutable source storage; compiled outputs were not copied. The original author receipt is preserved. This replay is not a fresh-context source review, full repository suite, protected-branch admission, live service check, security audit or physical-hardware qualification. The website's nonzero baseline is a retained FAIL, not a passing product build. Missing implementation inspections remain absence checks, not executed features.
+Host: macOS26.6.2 arm64; Git2.50.1, Python3.9.6, Node22.18.0, AppleClang17.0.0, jq1.7.1, uv0.7.3; only tools used by this recipe matter. OpenSSL signature recipe explicitly selected OpenSSL3.6.3 rather than system LibreSSL3.3.6. The browser route used Playwright1.60.0 / Chrome155.0.8059.85.
+
+RAW OBSERVED OUTPUT:
+REPO drakestapleton/drakestapleton.com
+SOURCE 450196e1f2f2335b24a8ef509f2a652a539b920b
+COMMAND
+node --check scripts/spa-fallback.mjs
+node --check scripts/verify-build.mjs
+node scripts/check-copy.mjs
+RAW OUTPUT
+src/pages/AienPage.tsx:97: no, no
+src/pages/OmegaPage.tsx:39: not
+src/pages/OmegaPage.tsx:127: not
+src/pages/OmegaPage.tsx:129: no
+src/pages/OmegaPage.tsx:131: not
+src/pages/OmegaPage.tsx:276: No
+src/pages/OmegaPage.tsx:287: not, not
+src/pages/OmegaPage.tsx:291: not
+src/pages/ScholarPage.tsx:20: no

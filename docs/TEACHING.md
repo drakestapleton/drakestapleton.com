@@ -15,3 +15,8 @@ node scripts/check-copy.mjs
 ```
 
 The two syntax checks return 0 with no stdout. The existing copy guard currently returns 1 and lists nine source lines, beginning `src/pages/AienPage.tsx:97: no, no`. This is a real failing baseline on the pinned checkout, not a passing build. It demonstrates the negative case: the guard refuses forbidden copy in pages. The overall command exits 1. The full release route requires Node 22, npm lockfile, Rust toolchain, `npm ci`, `npm run build:portfolio`, and `cargo run --release --manifest-path crates/site-builder/Cargo.toml -- dist` on the CI runner; that heavier route is recorded as pending here. [Replay receipt](teaching-replay-2026-10-22.txt).
+
+
+### Parent fresh-checkout replay
+
+A separate coordination replay is retained in [the parent receipt](parent-replay-2026-10-22.txt). Its scope and observed exit are explicit; source review and final desk qualification remain separate. A recorded absence or expected failing baseline is not a passing implementation.
