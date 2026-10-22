@@ -1,0 +1,32 @@
+TEACHING REPLAY 2026-10-22 UTC
+repository: drakestapleton/drakestapleton.com
+base_sha: 86e0b7dcb72e40cbc93da645fba8eabb378d72cc
+source_sha: 450196e1f2f2335b24a8ef509f2a652a539b920b
+environment: macOS-26.6.2-arm64-arm-64bit-Mach-O; python 3.14.6
+tool_versions:
+git --version: git version 2.55.0
+node --version: v22.18.0
+jq --version: jq-1.7.1-apple
+openssl version: OpenSSL 3.6.3 9 Jun 2026 (Library: OpenSSL 3.6.3 9 Jun 2026)
+cargo --version: cargo 1.97.1 (c980f4866 2026-06-30)
+qualification: copy guard FAIL on baseline source; full build pending because iMac SSH timed out
+checkout: fresh git clone --no-hardlinks --branch docs/teaching-20261022 from dedicated cohort clone
+command (from docs/TEACHING.md):
+node --check scripts/spa-fallback.mjs
+node --check scripts/verify-build.mjs
+node scripts/check-copy.mjs
+
+stdout:
+
+stderr:
+src/pages/AienPage.tsx:97: no, no
+src/pages/OmegaPage.tsx:39: not
+src/pages/OmegaPage.tsx:127: not
+src/pages/OmegaPage.tsx:129: no
+src/pages/OmegaPage.tsx:131: not
+src/pages/OmegaPage.tsx:276: No
+src/pages/OmegaPage.tsx:287: not, not
+src/pages/OmegaPage.tsx:291: not
+src/pages/ScholarPage.tsx:20: no
+
+exit: 1
