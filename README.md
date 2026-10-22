@@ -1,3 +1,7 @@
+<!-- github-native-navigation -->
+[Source](https://github.com/drakestapleton/drakestapleton.com) · [Walkthrough](docs/TEACHING.md) · [Replay receipt](docs/teaching-replay-2026-10-22.txt) · [Issues](https://github.com/drakestapleton/drakestapleton.com/issues)
+<!-- /github-native-navigation -->
+
 # Drake Stapleton: Freedom Fighter, AI Architect & Operator
 
 ## How it works and how to reproduce
