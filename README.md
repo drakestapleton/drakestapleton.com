@@ -1,5 +1,9 @@
 # Drake Stapleton: Freedom Fighter, AI Architect & Operator
 
+## How it works and how to reproduce
+
+I trace one actual source or design boundary in [the worked lesson](docs/TEACHING.md), with a pinned fresh-checkout exercise and [raw replay receipt](docs/teaching-replay-2026-10-22.txt). The lesson states what remains unimplemented or unverified at this revision.
+
 The personal project record of Drake Stapleton: production orchestration, GPU systems, model training, research, and Atlas.
 
 Open to good conversation and research partnerships that advance what our generation can build with AI.
